@@ -8,9 +8,10 @@
 
 /*Start style here*/
 
+
 body {
     font-family: Inconsolata;
-    color:#fff;
+    background: #726C0D;
 }
 
 .row {
@@ -27,17 +28,17 @@ body {
 
 
 
-.col {
+  .col {
   width: 50%;
   position: fixed;
   height: 100vh;
   overflow: scroll;
   z-index: -3;
-}
+  }
 
-.zindex {
+  .zindex {
   z-index: 1;
-}
+  }
 
   .left{
     left:0;
@@ -53,7 +54,9 @@ body {
     padding: 60px;
     padding-bottom: 20%;
     text-align: justify;
+
   }
+
 
   .scrollbar::-webkit-scrollbar {
     width: 1em;
@@ -61,8 +64,14 @@ body {
 
 
   .scrollbar::-webkit-scrollbar-thumb {
-  background-color: blue;
+  background-color: yellow;
   outline: 0px solid;
+  }
+
+
+
+  .scrollbar.red::-webkit-scrollbar-thumb {
+  background-color: transparent;
   }
 
   .number {
@@ -72,28 +81,35 @@ body {
 
   .home{
     position: fixed;
-    bottom:50px;
+    bottom:23px;
     left:30px;
     transform: rotate(90deg);
   }
 
   .sup{
     position: fixed;
-    bottom:50px;
+    bottom:26px;
     right:30px;
     transform: rotate(90deg);
-
+    cursor: help;
   }
 
   .kimmy{
     position: fixed;
-    bottom:50px;
-    left:50%;
-    width: 100px;
-    margin-left: -60px;
     text-align: center;
-
+    left: 10px;
   }
+
+  .gallery{
+    position: fixed;
+    top: 10px;
+    left: 10px;
+
+    cursor: pointer;
+    font-family: arial;
+    font-size: 30px;
+  }
+
 
   div#myDiv {
     transform: skewX(20deg); /* Standard syntax */
@@ -116,27 +132,254 @@ body {
     padding-left: 100px;
   }
 
-  body {
-    background-color: #d3272a;
-    }
 
     .noscroll{
       overflow: hidden;
     }
 
   a {
-    color: #fff;
+    color: black;
     text-decoration: none;
     }
 
-  a:hover {text-decoration: none; color: white}
+  a:hover {text-decoration: none; color: black}
 
   .bluebar {
     width: 100%;
-    height: 120px;
-    background-color: blue;
+    height: 70px;
+    background-color: yellow;
     position: fixed;
     left: 0px;
     bottom: 0px;
+  }
+
+
+
+/* All images */
+
+  .kimmy_images {
+    display:none;
+  }
+
+  .toggle {
+    color: #fff;
+  }
+
+  .kimmy_images.active {
+    display: block;
+  }
+
+  .kimmy_images img {
+    display: block;
+    margin: 20px;
+    box-shadow: 5px 5px blue;
+    cursor: move;
 
   }
+
+/* Position */
+
+  img.mt0{
+    margin-top: 0;
+  }
+
+  img.imgleft {
+    float: left;
+  }
+
+  img.imgleft__lm {
+    float: left;
+    margin-left: 20px;
+  }
+
+  img.imgleft__lm2 {
+    float: left;
+    margin-left: 30px;
+  }
+
+
+  img.imgright {
+    float: right;
+  }
+
+  img.imgleft__rm {
+    float: right;
+    margin-right: 20px;
+  }
+
+  img.imgleft__rm2 {
+    float: right;
+    margin-right: 60px;
+  }
+
+/* Size */
+  .size1 {
+    width: 400px;
+  }
+
+  .size2 {
+    width: 300px;
+  }
+
+
+  .size3 {
+      width: 250px;
+  }
+
+  .size4 {
+    width: 1100px;
+  }
+
+.nav {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  z-index: 2;
+  cursor: pointer;
+  font-family: arial;
+  font-size: 30px;
+}
+
+
+
+
+/* Notice the position.. it's right:-50vw; that means its 50% off the screen, HIDDEN.  */
+
+.menu {
+  height: 100vh;
+  width: 50vw;
+  background-color: yellow;
+  position: fixed;
+  right: -50vw;
+  top: 0px;
+  z-index: 1;
+  transition: all 2s;
+  font-family: arial;
+  font-size: 30px;
+  padding: 20px;
+}
+
+
+
+
+
+/* The added class showme makes the right 0. So it transitions from -50vw offscreen to right 0 on screen.  */
+
+.menu.showme {
+  right: 0;
+  transition: all 1s;
+}
+
+* {
+  box-sizing:border-box;
+}
+
+.row {
+  display: flex;
+  flex-wrap:wrap;
+}
+
+.cover {
+  background-color: green;
+  background-image: url(https://openclipart.org/image/2400px/svg_to_png/230740/360con16.png);
+  background-size: cover;
+  height:100vh;
+  width:100vw;
+}
+
+.center {
+  align-items:center;
+  justify-content:center;
+}
+
+.intro {
+  font-family: arial;
+  font-size: 80px;
+  text-align: center;
+  mix-blend-mode:difference;
+  color:white;
+  width:600px;
+  text-transform: uppercase;
+}
+
+body {
+  font-family: arial;
+  font-size: 30px;
+}
+
+.main {
+  width: 80%;
+  margin: auto;
+}
+
+h1 {
+  font-weight: normal;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 30px;
+}
+
+.rollover {
+  color: red;
+}
+
+.rollover:hover {
+  color: blue;
+}
+
+
+/*Two effects blur and rotate*/
+
+/* These are general classes */
+
+.blur {
+  position: fixed;
+  opacity: 0;
+  filter: blur(20px);
+  transition: all 2s;
+  pointer-events: none;
+}
+
+.blur.showme {
+  opacity: 1;
+  transition: all 2s;
+  filter: blur(0px);
+}
+
+
+.rotate {
+  position: fixed;
+  visibility: hidden;
+  transform: scale(0) rotate(0deg);
+  transition: all 2s;
+  pointer-events: none;
+  top: 0;
+  left: -50vw;
+}
+
+.rotate.showme {
+  transform: scale(1) rotate(360deg);
+  display: block;
+  transition: all 2s;
+  visibility: visible;
+  top: 0px;
+  left: 50vw;
+}
+
+
+/* Image layout ie specific classes*/
+
+.oase__image {
+  top: 20px;
+  right: 100px;
+}
+
+.magazine__image {
+  top:0px;
+  right:100px;
+}
+
+.landscape__image {
+  top: 20px;
+  right: 100px;
+}
