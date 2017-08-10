@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>p-2</title>
+    <style media="screen">
+
+    body{
+      background-color: white;
+    }
+
+    .circle {
+      z-index: -1;
+      position: absolute;
+      top:20%;
+      left:30%;
+      width: 500px;
+      height: 500px;
+      -moz-border-radius:250px;
+      -webkit-border-radius:250px;
+      border-radius: 500px;
+      background: yellow;
+    }
+
+    .circle2 {
+      z-index: 2;
+      position: absolute;
+      top:42%;
+      left:42%;
+      width: 200px;
+      height:200px;
+      -moz-border-radius:100px;
+      -webkit-border-radius:100px;
+      border-radius: 200px;
+      background: white;
+    }
+
+    .textone {
+      font-size: 12;
+      font-family: courier;
+      color: black;
+      position: absolute;
+      left: 20px;
+      bottom: 20px;
+    }
+
+    .texttwo {
+      font-size: 12;
+      font-family: courier;
+      color: black;
+      position: absolute;
+      right: 20px;
+      bottom: 20px;
+    }
+
+    .grow:hover
+    {
+            -webkit-transform: scale(2);
+            -ms-transform: scale(2);
+            transform: scale(2);
+    }
+
+    .shrink:hover
+    {
+            -webkit-transform: scale(0.5);
+            -ms-transform: scale(0.5);
+            transform: scale(0.5);
+    }
+
+
+
+    </style>
+  </head>
+  <body>
+
+
+
+          <div class="circle shrink">
+          </div>
+
+          <div class="circle2 grow">
+          </div>
+
+          <div class="textone">
+
+            plug_in
+
+          </div>
+
+          <div class="texttwo">
+
+            lezioni di paesaggio
+
+          </div>
+
+
+
+  </body>
+</html>
