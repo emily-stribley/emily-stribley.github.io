@@ -1,23 +1,27 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <script src="assets/js/jquery-3.2.0.min.js" charset="utf-8"></script>
+    <script src="assets/js/jquery-ui.min.js" charset="utf-8"></script>
+    <script src="assets/js/main.js" charset="utf-8"></script>
     <meta charset="utf-8">
     <title>p-3</title>
     <style media="screen">
 
     body {
-    background-color: black;
+    background-color: white;
     }
 
     .circle {
       z-index: 3;
       position: absolute;
-      width: 120px;
-      height: 120px;
+      width: 150px;
+      height: 150px;
       -moz-border-radius:60px;
       -webkit-border-radius:60px;
       border-radius: 120px;
-      background: black;
+      border: solid;
+      transition: all 0.5s;
     }
 
     .one{
@@ -61,7 +65,7 @@
     }
 
     .info{
-      font-size: 25px;
+      font-size: 38px;
       font-family: times;
       color: black;
       position: absolute;
@@ -70,20 +74,38 @@
     }
 
     .info2{
-      font-size: 25px;
+      font-size: 35px;
       font-family: times;
       color: black;
       position: absolute;
-      top: 80%;
+      top: 76%;
       left: 15%;
     }
 
     .poster {
-      width: 771px;
-      height:1000px;
-      margin: auto;
+      width: 958px;
+      height:1200px;
+      margin-top: 7%;
+      left:22%;
       position: relative;
       background-color: #ffad33;
+    }
+
+
+    .addred {
+      color: white;
+    }
+
+    .moveleft {
+      margin-left:1000px;
+    }
+
+    .moveright {
+      margin-left:-1000px;
+    }
+
+    .addblack {
+      background-color: black;
     }
 
     </style>

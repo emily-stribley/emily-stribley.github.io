@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link href="https://fonts.googleapis.com/css?family=Coustard:900" rel="stylesheet">
+    <script src="assets/js/jquery-3.2.0.min.js" charset="utf-8"></script>
+    <script src="assets/js/main.js" charset="utf-8"></script>
     <meta charset="utf-8">
     <title>p-2</title>
     <style media="screen">
@@ -9,63 +12,59 @@
       background-color: white;
     }
 
-    .circle {
+    .header {
+        transition: all 0.5s;
+        position: absolute;
+        top: 34%;
+        left: 6%;
+        font-size: 183px;
+        font-family: 'Coustard', serif;
+      }
+
+
+
+
+    .poster {
+      width: 958px;
+      height:1200px;
+      position: relative;
+      margin-top: 7%;
+      left:22%;
+      background-color: white;
       z-index: -1;
+    }
+
+
+
+    .sub {
       position: absolute;
-      top:20%;
-      left:30%;
-      width: 500px;
-      height: 500px;
-      -moz-border-radius:250px;
-      -webkit-border-radius:250px;
-      border-radius: 500px;
-      background: yellow;
+      top: 51%;
+      left: 71%;
+      font-size: 12px;
+      font-family: 'Coustard', serif;
+      text-align: center;
+      font-weight: 100;
     }
 
-    .circle2 {
-      z-index: 2;
-      position: absolute;
-      top:42%;
-      left:42%;
-      width: 200px;
-      height:200px;
-      -moz-border-radius:100px;
-      -webkit-border-radius:100px;
-      border-radius: 200px;
-      background: white;
+    .block {
+      width: 381px;
+      height:460px;
+      margin: auto;
+      position: relative;
+      top:50%;
+      background-color: mediumpurple;
+      z-index: 3;
+      -webkit-animation: mymove 5s infinite;
+      animation-name: example;
     }
 
-    .textone {
-      font-size: 12;
-      font-family: courier;
-      color: black;
-      position: absolute;
-      left: 20px;
-      bottom: 20px;
+
+    @keyframes example {
+    from {background-color: purple;}
+    to {background-color: mediumpurple;}
     }
 
-    .texttwo {
-      font-size: 12;
-      font-family: courier;
-      color: black;
-      position: absolute;
-      right: 20px;
-      bottom: 20px;
-    }
 
-    .grow:hover
-    {
-            -webkit-transform: scale(2);
-            -ms-transform: scale(2);
-            transform: scale(2);
-    }
-
-    .shrink:hover
-    {
-            -webkit-transform: scale(0.5);
-            -ms-transform: scale(0.5);
-            transform: scale(0.5);
-    }
 
 
 
@@ -74,24 +73,27 @@
   <body>
 
 
+    <div class="poster">
 
-          <div class="circle shrink">
-          </div>
 
-          <div class="circle2 grow">
-          </div>
+    <div class="header">
+    <div id="div1">"Softie"</div>
+    </div>
+    <br>
+    <div class="sub">
+      Soft like Scotties
+      <br>
+      and two ply strong.
+      <br>
+      Scott Two Ply.
+    </div>
 
-          <div class="textone">
+    <div class="block"></div>
 
-            plug_in
 
-          </div>
 
-          <div class="texttwo">
+    </div>
 
-            lezioni di paesaggio
-
-          </div>
 
 
 

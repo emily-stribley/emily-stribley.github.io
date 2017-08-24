@@ -1,27 +1,90 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <script src="assets/js/jquery-3.2.0.min.js" charset="utf-8"></script>
+    <script src="assets/js/jquery-ui.min.js" charset="utf-8"></script>
+    <script src="assets/js/main.js" charset="utf-8"></script>
     <meta charset="utf-8">
-    <title>p-3</title>
+    <title>p-4</title>
     <style media="screen">
 
-    body {
-    background-color: black;
+    .draggable {
+      padding: 0.5em;
+      background-color: white;
     }
 
-  
-    .poster {
-      width: 771px;
-      height:1000px;
-      margin: auto;
-      position: relative;
-      background-color: #ffad33;
+    body {
+    background-color: white;
     }
+
+
+    .poster {
+      width: 958px;
+      height:1200px;
+      margin-top: 7%;
+      left:22%;
+      position: relative;
+      background-color: white;
+      z-index: -1;
+    }
+
+    .block{
+      background-color: blue;
+      width: 897px;
+      height: 900px;
+      z-index: 2;
+      position: relative;
+      left: 3%;
+      top: 2%;
+    }
+
+    .text{
+      font-family: arial;
+      font-size:46px;
+      position: relative;
+      left: 53%;
+      top:4%;
+      z-index: 2;
+    }
+
+    .text2{
+      color: blue;
+      font-family: arial;
+      font-size:279px;
+      position: relative;
+      left: 1%;
+      top:-18%;
+      z-index: 2;
+    }
+
 
     </style>
+
+
   </head>
   <body>
 
+    <div class="poster">
+      <div class="block">
+      </div>
+
+      <div class="text">
+        The Biennale
+        <br>
+        of Sydney
+        <br>
+        Opera House
+        <br>
+        Nov 23, 1973
+      </div>
+
+      <div id="draggable" class="ui-widget-content">
+      <div class="text2">BS</div>
+      </div>
+
+
+
+    </div>
 
 
 
