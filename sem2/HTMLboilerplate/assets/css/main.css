@@ -10,32 +10,56 @@
 
 /* Start here */
 
+  body{
+    margin:0px;
+  }
+
+  .container{
+    display: flex;
+    flex-wrap: wrap;
+  }
 
 
-.marquee {
-    z-index: 2;
-    position: absolute;
-    top:160px;
-    right: 0;
-    width: 100%;
-    margin: 0 auto;
-    white-space: nowrap;
-    overflow: hidden;
-    box-sizing: border-box;
-}
+  .box{
+    text-align: center;
+    font-family: arial;
+    color: white;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+    font-size: 20px;
+  }
 
-.marquee span {
-    display: inline-block;
-    padding-left: 100%;
-    animation: marquee 10s linear infinite;
-}
+  .box {
+    flex:0 0 33.333%;
+    border: solid black;
+  }
 
-.marquee span:hover {
-    animation-play-state: paused
-}
+  .content{
+    margin: 10px;
+    padding: 10px;
+    border: solid black;
 
-/* Make it move */
-@keyframes marquee {
-    0%   { transform: translate(0, 0); }
-    100% { transform: translate(-100%, 0); }
-}
+  }
+
+  .box1 .content{
+    background-color: yellow
+  }
+
+  .box2 .content{
+    background-color: pink;
+  }
+
+  .box3 .content{
+    background-color: orange;
+  }
+
+  .box1{
+
+  }
+
+  .box2{
+
+  }
+
+  .box3{
+
+  }
