@@ -53,29 +53,41 @@
     .content {
       margin: 10px;
       padding: 10px;
+      font-size: 12px;
+      color: white;
+      text-align: center;
+      font-family: arial;
+      background-color: red;
     }
 
     .content img {
-      max-width: 100%;
+      width: 100px;
       height: 140px;
+      mix-blend-mode: multiply;
     }
 
-
-    .menu {
-      height: 100vh;
-      width: 50vw;
-      color: red;
-      position: fixed;
-      left: 50vw;
-      top: 0px;
-      z-index: 1;
-      transition: all 2s;
+    .text {
+      font-size: 12px;
+      color: white;
+      text-align: left;
       font-family: arial;
-      font-size: 20px;
-      padding: 20px;
-      overflow: auto;
-      text-decoration-color: white;
+      position: fixed;
+      top: 1%;
+      left: 94%;
     }
+
+    .float img {
+      width: 400px;
+      height: 100px;
+    }
+
+    .float{
+      position: fixed;
+      top:50%;
+      left: 50%;
+      z-index: 3;
+    }
+
 
 
 
@@ -85,41 +97,67 @@
   </head>
   <body>
 
+    <div class="text">
+      Project One
+      <br>
+      5 Posters
+    </div>
+
     <div class="row">
       <div class="col1of5">
         <div class="content">
           <a href="poster1.html"><img src="assets/images/poster1.png" alt=""></a>
+          <br>
+          <br>
+          1
         </div>
       </div>
 
       <div class="row">
-        <div class="content">
-          <img src="assets/images/poster2.png" alt="">
+        <div class="col1of5">
+          <div class="content">
+            <a href="poster2.html"><img src="assets/images/poster2.png" alt=""></a>
+            <br>
+            <br>
+            2
         </div>
       </div>
 
       <div class="row">
-        <div class="content">
-          <img src="assets/images/poster3.png" alt="">
+          <div class="col1of5">
+            <div class="content">
+              <a href="poster3.html"><img src="assets/images/poster3.png" alt=""></a>
+              <br>
+              <br>
+              3
         </div>
       </div>
 
       <div class="row">
-        <div class="content">
-          <img src="assets/images/poster4.png" alt="">
+        <div class="col1of5">
+          <div class="content">
+          <a href="poster4.html"><img src="assets/images/poster4.png" alt=""></a>
+          <br>
+          <br>
+          4
         </div>
       </div>
 
       <div class="row">
-        <div class="content">
-          <img src="assets/images/poster5.png" alt="">
+        <div class="col1of5">
+          <div class="content">
+          <a href="poster5.html"><img src="assets/images/poster5.png" alt=""></a>
+          <br>
+          <br>
+          5
         </div>
       </div>
-
 
     </div>
 
+    <div class="float">
 
+    </div>
 
 
 

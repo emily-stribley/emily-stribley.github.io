@@ -32,29 +32,7 @@ $(document).ready(function() {
 
   $( function() {
   $( "#draggable" ).draggable();
-  } );
-
-
-
-  var audioHorn = document.createElement('audio');
-        audioHorn.setAttribute('src', 'https://www.soundjay.com/misc/hohner-melodica-1.mp3');
-        $.get();
-        audioHorn.addEventListener("load", function() {
-          audioHorn.play();
-        }, true);
-
-
-  $(".hover_horn").hover(
-          function() {
-            audioHorn.play();
-          },
-          function() {
-            audioHorn.pause();
-          }
-        );
-
-
-
+  });
 
 
 

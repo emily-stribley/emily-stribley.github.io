@@ -12,6 +12,31 @@
       background-color: white;
     }
 
+    a {
+      text-decoration: none;
+      color: red;
+    }
+
+    .nav_back {
+      position: fixed;
+      top: 1%;
+      left:1%;
+
+      font-size: 12px;
+      color: white;
+      font-family: arial;
+    }
+
+    .nav_foward {
+      position: fixed;
+      top: 1%;
+      left:96%;
+
+      font-size: 12px;
+      color: white;
+      font-family: arial;
+    }
+
     .header {
         transition: all 0.5s;
         position: absolute;
@@ -19,6 +44,8 @@
         left: 6%;
         font-size: 183px;
         font-family: 'Coustard', serif;
+        -webkit-animation: mymove 5s infinite;
+        animation-name: example2;
       }
 
 
@@ -44,6 +71,8 @@
       font-family: 'Coustard', serif;
       text-align: center;
       font-weight: 100;
+      -webkit-animation: mymove 1s infinite;
+      animation-name: example3;
     }
 
     .block {
@@ -64,7 +93,15 @@
     to {background-color: mediumpurple;}
     }
 
+    @keyframes example2 {
+    from {color: purple;}
+    to {color: mediumpurple;}
+    }
 
+    @keyframes example3 {
+    from {color: purple;}
+    to {color: white;}
+    }
 
 
 
@@ -73,8 +110,16 @@
   <body>
 
 
-    <div class="poster">
+    <div class="nav_back">
+      <a href="poster1.html">POSTER 1</a>
+    </div>
 
+    <div class="nav_foward">
+      <a href="poster3.html">POSTER 3</a>
+    </div>
+
+
+    <div class="poster">
 
     <div class="header">
     <div id="div1">"Softie"</div>
