@@ -32,6 +32,7 @@ a {
   padding: 20px;
   bottom: 0;
   left: 0;
+  background: white;
 }
 
 .footertwo {
@@ -44,11 +45,11 @@ a {
 }
 
 .main {
-  position: absolute;
-  top: 10px;
-  left: 1600px;
+  z-index: 5;
+  position: fixed;
+  bottom: 25px;
+  left: 1540px;
   color: #e6ac00;
-  text-decoration: underline;
 }
 
 .title {
@@ -79,10 +80,6 @@ a {
   color: #e6ac00;
 }
 
-.box img {
-  max-width: 50%;
-}
-
 .images {
   top: 20px;
   left: 1200px;
@@ -90,17 +87,22 @@ a {
 }
 
 img {
-  max-width: 90%;
+  max-width: 100%;
+}
+
+.box video {
+  max-width: 97%;
+}
+
+.box img {
+  max-width: 97%;
 }
 
 .box {
   position: absolute;
-  top: 120px;
-  left: 20px;
-  width:1640px;
-  overflow-x: scroll;
-  overflow-y: hidden;
-  white-space: nowrap;
+  top: 20px;
+  left: 1000px;
+  bottom: 30px;
   }
 
 .hover {
